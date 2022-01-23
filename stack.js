@@ -4,7 +4,7 @@
 
 // * Create a stack class
 
-class Stack {
+class StackClass {
   constructor() {
     this.count = 0
     this.storage = {}
@@ -49,7 +49,7 @@ class Stack {
   }
 }
 
-let myStack = new Stack()
+let myStack = new StackClass()
 
 myStack.push(1)
 myStack.push(10)
