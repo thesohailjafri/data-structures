@@ -10,17 +10,24 @@ class Stack {
     this.storage = {}
 
     this.push = function (value) {
+      //set element in storage with key of count
       this.storage[this.count] = value
+      //increae the count by 1
       this.count++
     }
 
     this.pop = function () {
+      //if count is 0 meana no element is present in stack
       if (this.count === 0) {
         return undefined
       }
+      //stack always point 1 index ahead so remove 1 to access last stack element
       this.count--
+      //store that last element
       const result = this.storage[this.count]
+      //delete that element
       delete this.storage[this.count]
+      //return that element
       return result
     }
 
