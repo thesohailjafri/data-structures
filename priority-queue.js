@@ -17,10 +17,10 @@ class PriorityQueue {
     }
 
     this.enquque = (element) => {
+      /* check for priority of the element */
       if (this.collection.isEmpty) {
         this.collection.push(element)
       } else {
-        /* check for priority of the element */
         let added = false
         for (let i = 0; i < this.collection.length; i++) {
           if (element[1] < this.collection[i][1]) {
